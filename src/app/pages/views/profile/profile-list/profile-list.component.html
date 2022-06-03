@@ -1,0 +1,85 @@
+<div class="order-backgound" [ngStyle]="{'background': 'url(' + photo + ') no-repeat 0 0 / cover'}">
+    <div class="container-fluid">
+        <div class="profile-listing">
+            <div class="profile-heading mb-2">
+                <div class="row">
+                    <div class="col-6">
+                        <h3>Customer Details</h3>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <a class="newbutton" (click)="authService.openAddAddresDialog()">New</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5">
+                    <div class="profile-deatils mb-5">
+                        <ul>
+                            <li><span>Account#:</span>
+                                <p>7517517511</p>
+                            </li>
+                            <li><span>Name:</span>
+                                <p>Sarwan</p>
+                            </li>
+                            <li><span>Email</span>
+                                <p>skumar@anviam.com</p>
+                            </li>
+                            <li><span>Phone#:</span>
+                                <p>7965251547</p>
+                            </li>
+                            <li><span>Billing Addres:</span>
+                                <p>Chandigarh,Chandigarh punjab,16002</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-listings">
+                <h3>Delivery Address:</h3>
+                <nz-table #nestedTable [nzData]="topData" [nzPageSize]="10">
+                    <thead>
+                        <tr>
+                            <th>Tank</th>
+                            <th>Street</th>
+                            <th>City</th>
+                            <th>State</th>
+                            <th>Zip</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <ng-template ngFor let-data [ngForOf]="nestedTable.data">
+                            <tr>
+                                <td [(nzExpand)]="data.expand"></td>
+                                <td>{{ data.street }}</td>
+                                <td>{{ data.city }}</td>
+                                <td>{{ data.state }}</td>
+                                <td>{{ data.zip }}</td>
+                                <td>
+                                    <a class="actionbutton mr-2">Edit</a><a class="actionbutton">Delete</a>
+                                </td>
+                            </tr>
+                            <tr [nzExpand]="data.expand">
+                                <!-- <h1>{{data.items[0].tank_feul}}</h1> -->
+                                <nz-table #innerTable [nzData]="data.items" nzSize="middle" [nzShowPagination]="false">
+                                    <thead>
+                                        <tr>
+                                            <th>Tank Fuel</th>
+                                            <th>Tank Size</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let item of data.items">
+                                            <td>{{ item.tank_feul }}</td>
+                                            <td>{{ item.tank_size }}</td>
+                                        </tr>
+                                    </tbody>
+                                </nz-table>
+                            </tr>
+                        </ng-template>
+                    </tbody>
+                </nz-table>
+            </div>
+        </div>
+    </div>
+</div>

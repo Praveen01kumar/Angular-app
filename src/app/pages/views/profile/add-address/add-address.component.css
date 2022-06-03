@@ -1,0 +1,18 @@
+.main-addAddres {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #CCCCCC;
+}
+
+.login-form-button {
+    background-color: #004A90;
+    border: none;
+    padding: 5px 15px;
+    color: #ffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #000;
+}

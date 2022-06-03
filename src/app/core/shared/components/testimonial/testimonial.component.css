@@ -1,0 +1,58 @@
+[nz-carousel-content] {
+    text-align: center;
+    height: 250px;
+    background: #fff;
+    color: #fff;
+    overflow: hidden;
+}
+
+.custom-change-slider {
+    padding: 30px;
+}
+
+.images-part img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.slider-para {
+    position: relative;
+}
+
+.slider-para h2 {
+    color: #004a90;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.slider-para p {
+    padding: 0px 60px;
+}
+
+.icon-left {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+.images-part {
+    display: flex;
+    justify-content: center;
+}
+
+.ant-carousel {
+    height: 320px;
+    box-shadow: 1px 1px 10px rgb(221 221 221 / 74%);
+}
+
+@media (max-width:488px) {
+    .slider-para p {
+        padding: 0px;
+    }
+    .icon-left {
+        top: -5px;
+    }
+    .ant-carousel {
+        height: 380px;
+    }
+}

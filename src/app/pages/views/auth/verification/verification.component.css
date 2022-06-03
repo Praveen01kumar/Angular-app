@@ -1,0 +1,25 @@
+.main-login {
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #CCCCCC;
+  }
+
+  .main-login p{
+      color: #fff;
+  }
+
+  .login-form-button{
+    background-color: #004A90;
+    border: none;
+    padding: 5px 15px;
+    color: #ffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.Resend-code{
+    color: #fff;
+}
+
+input::placeholder{
+    color: #000;
+  }

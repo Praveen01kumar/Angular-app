@@ -1,0 +1,24 @@
+<div class="testimonial section-padding">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12 col-sm-12 col-md-8">
+                <div class="w-100">
+                    <nz-carousel [nzEffect]="effect">
+                        <div nz-carousel-content *ngFor="let item of array" class="custom-change-slider">
+                            <div class="images-part">
+                                <img [src]="item.src" alt="">
+                            </div>
+                            <div class="slider-para">
+                                <h2>{{item.name}}</h2>
+                                <p>{{item.para}}</p>
+                                <div class="icon-left">
+                                    <img src="../../../../../assets/images/testimonial/coma.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </nz-carousel>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

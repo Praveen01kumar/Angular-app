@@ -1,0 +1,90 @@
+<div class="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <div class="header-logo">
+                    <img src="../../../../assets/images/logo.png">
+                    <a>
+                        <!-- <i class="fa fa-bars" aria-hidden="true"></i> -->
+                        <div class="mobile-menu-bar">
+                            <div class="menu-icon">
+                                <div class="icon">
+                                    <div class="icon-type">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 text-right mobile-change-possion">
+                <div class="herder-login">
+                    <ul class="desktop-signup mx-0 my-0">
+                        <li>
+                            <a>
+                                <div class="d-flex justify-content-center align-items-center" (click)="authService.openLoginDialog()">
+                                    <span>
+                                        <div class="circle-one"></div>
+                                        <div class="circle-two">
+                                            <i class="fa fa-sign-in" aria-hidden="true"></i>
+                                        </div>
+                                    </span>
+                                    <div class="heading">
+                                        LOGIN
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <div class="d-flex justify-content-center align-items-center" (click)="authService.openSignUpDialog()">
+                                    <span>
+                                        <div class="circle-one"></div>
+                                        <div class="circle-two">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </div>
+                                    </span>
+                                    <div class="heading">
+                                        SIGN UP
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span>
+                                        <div class="circle-one"></div>
+                                        <div class="circle-two">
+                                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                                        </div>
+                                    </span>
+                                    <div class="heading">
+                                        LOGOUT
+                                    </div>
+                                </div>
+                            </a>
+                        </li> -->
+                        <li>
+                            <a class="notifiction" href=""><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="mobile-login mx-0 my-0">
+                        <li>
+                            <a class="notifiction" href=""><i class="fa fa-bell-o" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a class="notifiction" nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu"><i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+                            <nz-dropdown-menu #menu="nzDropdownMenu">
+                                <ul nz-menu class="px-1 py-0">
+                                    <li nz-menu-item><a class="mobile-link-login" (click)="authService.openLoginDialog()">LOGIN</a></li>
+                                    <li nz-menu-item><a class="mobile-link-login" (click)="authService.openSignUpDialog()">SIGN UP</a></li>
+                                </ul>
+                            </nz-dropdown-menu>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+.previous-backgound {
+    width: 100%;
+    padding: 10px;
+}
+
+.previes-list {
+    width: 100%;
+    position: relative;
+    background-color: #283466;
+    padding: 15px 40px;
+    box-shadow: 2px 3px 8px rgb(255 255 255 / 91%);
+}
+
+.previous-form {
+    width: 100%;
+    background-color: #004A90;
+}
+
+.previous-heading ul {
+    border-bottom: 1px solid #fff;
+}
+
+.previous-heading ul li {
+    display: inline-block;
+}
+
+.previous-heading ul li:last-child {
+    float: right;
+}
+
+.previous-heading ul li p {
+    color: #fff;
+    font-family: 'Releway semi-bold';
+    font-size: 18px;
+    padding: 10px;
+}
+
+.previous-heading ul li p span {
+    font-family: 'Roboto regular';
+    font-size: 16px;
+}
+
+.previous-body {
+    padding: 10px;
+}
+
+.delivery span {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Releway medium';
+}
+
+.delivery p {
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.previous-payment {
+    padding: 0px 10px;
+}
+
+.previous-payment p {
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Releway medium';
+}
+
+.previous-payment p span {
+    font-size: 14px;
+    font-family: 'Roboto regular';
+}
+
+.status-bar {
+    padding: 10px;
+}
+
+.status-bar p {
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Releway medium';
+}
+
+.status-bar span {
+    color: #fff;
+    font-family: 'Roboto regular';
+}
+
+.message-form {
+    padding: 10px;
+}
+
+.message-form .heading {
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Releway medium';
+}
+
+.message-form a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #283466;
+    font-family: 'Releway semi-bold';
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+}

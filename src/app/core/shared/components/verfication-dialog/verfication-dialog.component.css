@@ -1,0 +1,11 @@
+.heading-popup {
+    background-color: #283466;
+    border-radius: 20px;
+    }
+    .heading-popup h2{
+        padding-top: 10px !important;
+        color: #fff;
+        font-family: 'Releway semi-bold';
+        font-size: 28px;
+    }
+    

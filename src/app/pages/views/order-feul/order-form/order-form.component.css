@@ -1,0 +1,91 @@
+.order-backgound {
+    width: 100%;
+    padding: 10px;
+}
+
+.order-backgound p,
+span {
+    font-family: 'Roboto regular';
+}
+
+.delivery p {
+    color: #ffff;
+    font-size: 24px;
+}
+
+label {
+    color: #fff;
+}
+
+.order-form {
+    width: 100%;
+    position: relative;
+    background-color: #283466;
+    padding: 10px 20px;
+    box-shadow: 2px 3px 8px rgb(255 255 255 / 91%);
+}
+
+.input-field-lable label {
+    font-size: 18px;
+}
+
+.input-field-lable p {
+    font-size: 14px;
+    color: #fff;
+}
+
+.estimate-section p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.address-detail span {
+    font-family: 'Releway semi-bold';
+}
+
+nz-select {
+    width: 100%;
+}
+
+.ant-select-selection {
+    background-color: green;
+}
+
+button {
+    font-family: 'Releway bold';
+}
+
+.subtotal {
+    color: #fff;
+}
+
+
+
+/* cylinder type css  */
+.ten-lb-box{
+    width: 100%;
+    text-align: center;
+    background-color: #000;
+    border-radius: 8px;
+    padding: 10px;
+}
+.ten-lb-box h3{
+font-size: 40px;
+color: #fff;
+font-family: 'Releway bold';
+}
+.ten-lb-box h3 span{
+    font-size: 20px;
+}
+.ten-lb-box p{
+    font-size: 20px;
+    color: #fff;  
+}
+
+nz-input-number {
+    margin-right: 8px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+  }

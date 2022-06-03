@@ -1,0 +1,39 @@
+<div class="main-login">
+    <form nz-form [formGroup]="loginForm" class="login-form" (ngSubmit)="submitForm()">
+        <nz-form-item>
+            <nz-form-control [nzErrorTip]="emailErrorTpl">
+                <nz-input-group>
+                    <input nz-input formControlName="email" placeholder="Email">
+                    <span class="icon-field"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                </nz-input-group>
+                <ng-template #emailErrorTpl let-control>
+                    <ng-container *ngIf="control.hasError('required')">
+                        Please input your email!
+                    </ng-container>
+                    <ng-container *ngIf="control.hasError('invalidEmail')">
+                        Invalid email address
+                    </ng-container>
+                </ng-template>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control nzErrorTip="Please input your Password!">
+                <nz-input-group>
+                    <input type="password" nz-input formControlName="password" placeholder="Password" />
+                    <span class="icon-field"><i class="fa fa-user pl-2" aria-hidden="true"></i></span>
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+        <div nz-row class="login-form-margin">
+            <div nz-col [nzSpan]="12">
+                <label nz-checkbox class="remember" formControlName="remember">
+                    <span>Remember me</span>
+                </label>
+            </div>
+            <div nz-col [nzSpan]="12">
+                <a class="login-form-forgot">Forgot password</a>
+            </div>
+        </div>
+        <button nz-button class="login-form-button login-form-margin">Log in</button>
+    </form>
+</div>

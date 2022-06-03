@@ -1,0 +1,53 @@
+
+  .login-form-margin {
+    margin-bottom: 16px;
+  }
+
+  .login-form-forgot {
+    float: right;
+  }
+.login-form-button{
+    background-color: #004A90;
+    border: none;
+    padding: 5px 15px;
+    color: #ffff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+  .main-login {
+    width: 100%;
+    padding: 20px;
+  }
+  .remember span{
+      color: #fff;
+  }
+  .login-form-forgot{
+      color: #ffff;
+  }
+
+  input::placeholder{
+    color: #000;
+  }
+
+  input{
+    padding-left: 30px;
+    border-radius: 5px;
+  }
+  
+  .icon-field{
+    position: absolute;
+    width: 26px;
+    height: 32px;
+    left: 0;
+    top: 0;
+    z-index: 9999999;
+    background: #C4C4C4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  .icon-field i{
+    color: #fff;
+    padding-top: 10px;
+    padding-left: 6px;
+  }

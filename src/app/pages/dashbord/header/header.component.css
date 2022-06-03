@@ -1,0 +1,32 @@
+.mobile-login {
+    display: none;
+}
+
+@media (max-width:767px) {
+    .desktop-signup {
+        display: none;
+    }
+    .mobile-login {
+        display: block;
+    }
+    .notifiction {
+        border-radius: 5px;
+    }
+    .header .mobile-change-possion {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .mobile-link-login {
+        background-color: #283466;
+        color: #fff;
+        display: block;
+        width: 150px;
+        text-decoration: none;
+    }
+    .mobile-link-login:hover {
+        background-color: #fff;
+        color: #283466;
+        text-decoration: none;
+    }
+}

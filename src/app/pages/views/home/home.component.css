@@ -1,0 +1,205 @@
+.slider-paragraph .slider-para-heading h2 {
+    font-family: 'Releway medium';
+    font-size: 55px;
+    color: #fff;
+}
+
+.slider-paragraph .slider-para-heading p {
+    font-size: 34px;
+    color: #fff;
+}
+
+.three-part .slider-box {
+    width: 200px;
+    text-align: center;
+}
+
+.three-part .slider-box img {
+    width: 50px;
+}
+
+.three-part .slider-box h3 {
+    font-family: 'Releway semi-bold';
+    font-size: 24px;
+    color: #fff;
+}
+
+.three-part .slider-box a {
+    color: #fff;
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.three-part .slider-box a:hover {
+    color: #F5E127;
+    border: 1px solid #F5E127;
+}
+
+
+/* body-section next design */
+
+.oil-box {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.oil-box:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    left: -100%;
+    border-bottom: 4px solid #0741EC;
+    transition: 0.3s;
+}
+
+.oil-box:hover:after {
+    left: 0;
+    transition: 0.3s;
+}
+
+
+/* .oil-box:hover {
+    border-bottom: 4px solid #0741EC;
+} */
+
+.oil-icon {
+    width: 20%;
+}
+
+.oil-icon img {
+    width: 50px;
+}
+
+.oil-para {
+    width: 80%;
+}
+
+.oil-para h3 {
+    font-size: 16px;
+}
+
+.oil-para p {
+    font-size: 14px;
+}
+
+.download {
+    width: 100%;
+    background-color: #F8F8F8;
+}
+
+.section-heading p {
+    padding: 20px 200px;
+}
+
+.download .download-para h3 {
+    font-size: 36px;
+    color: #646161;
+    font-family: 'Releway semi-bold';
+}
+
+.download-button {
+    display: flex;
+    width: 100%;
+}
+
+.download-button li {
+    display: inline-block;
+}
+
+.download-button li a {
+    display: table;
+    padding: 5px 20px;
+    border: 2px solid rgb(16 41 124 / 89%);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.download-button .download-icons {
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+.download-button .download-paragraph {
+    display: table-cell;
+}
+
+.download-button .download-paragraph h3 {
+    font-size: 18px;
+    color: #000;
+}
+
+@media (max-width:767px) {
+    .image-slider img {
+        height: 420px;
+        object-fit: cover;
+    }
+    .three-part .slider-box img {
+        width: 50px;
+        height: auto;
+    }
+    .section-heading p {
+        padding: 10px;
+    }
+}
+
+@media (max-width:488px) {
+    .slider-paragraph .slider-para-heading h2 {
+        font-size: 40px;
+    }
+    .slider-paragraph .slider-para-heading p {
+        font-size: 28px;
+    }
+    .three-part .slider-box img {
+        width: 35px;
+    }
+    .three-part .slider-box h3 {
+        font-size: 18px;
+    }
+    .three-part .slider-box a {
+        padding: 5px 15px;
+        border-radius: 25px;
+        font-size: 14px;
+    }
+    .oil-icon img {
+        width: 35px;
+    }
+    .section-heading span h3 {
+        font-size: 30px;
+    }
+    .section-heading span span:before {
+        width: 40px;
+    }
+    .section-heading span span:after {
+        width: 40px;
+    }
+    .download-para .download-button {
+        flex-flow: column;
+    }
+    .download-para .download-button {
+        margin-top: 15px !important;
+    }
+    .download-para .download-button li {
+        margin-left: 0px !important;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* [nz-carousel-content] {
+    text-align: center;
+    height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+} */

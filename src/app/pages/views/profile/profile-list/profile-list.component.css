@@ -1,0 +1,76 @@
+.order-backgound {
+    width: 100%;
+    padding: 10px;
+}
+
+.profile-listing {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    padding: 10px 20px;
+    box-shadow: 2px 3px 8px rgb(255 255 255 / 91%);
+}
+
+.profile-listing .profile-heading {
+    background-color: #283466;
+    padding: 5px 10px;
+}
+
+.profile-listing .profile-heading h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.profile-listing .profile-heading .newbutton {
+    background-color: white;
+    display: inline-block;
+    padding: 2px 14px;
+    text-decoration: none;
+    color: #283466;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.actionbutton {
+    padding: 6px 10px;
+    display: inline-block;
+    background-color: #283466;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.actionbutton:hover {
+    background-color: #004a90;
+}
+
+.profile-listings h3 {
+    color: #283466;
+    font-size: 24px;
+    font-family: 'Releway semi-bold';
+}
+
+.profile-deatils {
+    padding: 10px;
+    box-shadow: 1px 5px 51px rgb(40 52 102 / 34%) inset;
+}
+
+.profile-deatils ul li {
+    font-size: 15px;
+    font-family: 'Releway semi-bold';
+    display: table;
+}
+
+.profile-deatils ul li span {
+    font-size: 18px;
+    font-family: 'Releway bold';
+    display: table-cell;
+    width: 140px;
+    vertical-align: middle;
+}
+
+.profile-deatils ul li p {
+    margin-bottom: 0px;
+    display: table-cell;
+    vertical-align: middle;
+}

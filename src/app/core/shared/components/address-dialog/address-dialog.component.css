@@ -1,0 +1,8 @@
+.cursor-pointer {
+    cursor: pointer;
+    color: #fff !important;
+}
+
+.cursor-pointer:hover {
+    color: rgb(180 180 181 / 69%) !important;
+}

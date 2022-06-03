@@ -1,0 +1,50 @@
+<div class="main-login">
+    <p>Enter The 6 Digit Code We Sent We Sent To You Via Email/Phone Number To Continue </p>
+    <form class="form-signin mt-4" [formGroup]="verificationForm" nz-form (ngSubmit)="onVerification()">
+        <nz-form-item>
+            <nz-form-control nzErrorTip="Please input your Verification Code!">
+                <nz-input-group>
+                    <input nz-input type="text" formControlName="verfication_code" placeholder="Verification Code" />
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control [nzErrorTip]="passwordErrorTpl">
+                <nz-input-group>
+                    <input type="password" nz-input formControlName="password" placeholder="Password">
+                </nz-input-group>
+                <ng-template #passwordErrorTpl let-control>
+                    <ng-container *ngIf="control.hasError('required')">
+                        Please input your account password!
+                    </ng-container>
+                    <ng-container *ngIf="control.hasError('minlength')">
+                        Password should have at least 6 characters long!
+                    </ng-container>
+                </ng-template>
+            </nz-form-control>
+        </nz-form-item>
+        <nz-form-item>
+            <nz-form-control [nzErrorTip]="confirmPasswordErrorTpl">
+                <nz-input-group>
+                    <input type="password" nz-input formControlName="confirmPassword" placeholder="Repeat Password">
+                </nz-input-group>
+                <ng-template #confirmPasswordErrorTpl let-control>
+                    <ng-container *ngIf="control.hasError('required')">
+                        Please repeat password!
+                    </ng-container>
+                    <ng-container *ngIf="control.hasError('mustMatch')">
+                        Password don't match
+                    </ng-container>
+                </ng-template>
+            </nz-form-control>
+        </nz-form-item>
+        <div nz-row class="login-form-margin" nzAlign="middle">
+            <div nz-col [nzSpan]="12">
+                <button nz-button class="login-form-button login-form-margin">Sign Up</button>
+            </div>
+            <div nz-col [nzSpan]="12" class="text-right">
+                <a class="Resend-code">Resend Code</a>
+            </div>
+        </div>
+    </form>
+</div>

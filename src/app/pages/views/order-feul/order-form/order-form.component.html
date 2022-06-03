@@ -1,0 +1,225 @@
+<div class="order-backgound" [ngStyle]="{'background': 'url(' + photo + ') no-repeat 0 0 / cover'}">
+    <div class="container-fluid">
+        <div class="order-form">
+            <form [formGroup]="orderForm" (ngSubmit)="submitForm()">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4">
+                        <div class="delivery">
+                            <p><i class="fa fa-map-marker mr-2" aria-hidden="true"></i>DELIVERY ADDRESS</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 d-flex align-items-center">
+                        <div class="delivery">
+                            <nz-radio-group formControlName="fuelType">
+                                <label nz-radio [nzValue]="true">Get Fuel</label>
+                                <label nz-radio [nzValue]="false">Get Cylinders</label>
+                            </nz-radio-group>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <nz-select nzShowSearch nzAllowClear formControlName="addresone" nzPlaceHolder="Address">
+                            <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+                            <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+                            <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+                        </nz-select>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <nz-select nzShowSearch nzAllowClear formControlName="addrestwo" nzPlaceHolder="Select a person">
+                            <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+                            <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+                            <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+                        </nz-select>
+                    </div>
+                </div>
+                <div class="row mt-2" *ngIf="f.fuelType.value">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank fuel</label>
+                        <input nz-input formControlName="tankfuel" placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank size</label>
+                        <input nz-input formControlName="tanksize" placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 input-field-lable d-flex align-items-end">
+                        <p class="mb-0">Do you want to order by number of gallons or tank reading?</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex align-items-end">
+                        <nz-radio-group>
+                            <label nz-radio nzValue="A">No. of gallons</label>
+                            <label nz-radio nzValue="B">Amount</label>
+                        </nz-radio-group>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank size</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                </div>
+                <div class="row mt-3 estimate-section" *ngIf="f.fuelType.value">
+                    <div class="col-6">
+                        <p>Estimated Cost:</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end">
+                        <label>$ 0.00</label>
+                    </div>
+                </div>
+                <div class="row mt-2" *ngIf="f.fuelType.value">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank fuel</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank size</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 input-field-lable d-flex align-items-end">
+                        <p class="mb-0">Do you want to order by number of gallons or tank reading?</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex align-items-end">
+                        <nz-radio-group>
+                            <label nz-radio nzValue="A">No. of gallons</label>
+                            <label nz-radio nzValue="B">Amount</label>
+                        </nz-radio-group>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank size</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                </div>
+                <div class="row mt-3 estimate-section" *ngIf="f.fuelType.value">
+                    <div class="col-6">
+                        <p>Estimated Cost:</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end ">
+                        <label>$ 0.00</label>
+                    </div>
+                </div>
+                <div class="row mt-2" *ngIf="f.fuelType.value">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank fuel</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank size</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 input-field-lable d-flex align-items-end">
+                        <p class="mb-0">Do you want to order by number of gallons or tank reading?</p>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-3 d-flex align-items-end">
+                        <nz-radio-group>
+                            <label nz-radio nzValue="A">No. of gallons</label>
+                            <label nz-radio nzValue="B">Amount</label>
+                        </nz-radio-group>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-2 input-field-lable">
+                        <label class="mb-0" for="">Tank size</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                </div>
+                <div class="row mt-3 estimate-section" *ngIf="f.fuelType.value">
+                    <div class="col-6">
+                        <p>Estimated Cost:</p>
+                    </div>
+                    <div class="col-6 d-flex justify-content-end ">
+                        <label>$ 0.00</label>
+                    </div>
+                </div>
+                <div class="row mt-2" *ngIf="!f.fuelType.value">
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="ten-lb-box" [style.backgroundColor]="firstcolor">
+                            <h3>10 <span>Lb.</span></h3>
+                            <p>Tank Exch $100.00</p>
+                        </div>
+                        <nz-input-number [nzSize]="'small'" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="ten-lb-box" [style.backgroundColor]="secondcolor">
+                            <h3>20 <span>Lb.</span></h3>
+                            <p>BBQ Tank Exch $200.00</p>
+                        </div>
+                        <nz-input-number [nzSize]="'small'" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="ten-lb-box" [style.backgroundColor]="thirdcolor">
+                            <h3>30 <span>Lb.</span></h3>
+                            <p>Tank Exch $300.00</p>
+                        </div>
+                        <nz-input-number [nzSize]="'small'" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="ten-lb-box" [style.backgroundColor]="fourcolor">
+                            <h3>40 <span>Lb.</span></h3>
+                            <p>Tank Exch $34.00</p>
+                        </div>
+                        <nz-input-number [nzSize]="'small'" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="ten-lb-box" [style.backgroundColor]="fivecolor">
+                            <h3>50 <span>Lb.</span></h3>
+                            <p>Tank Exch $345.00</p>
+                        </div>
+                        <nz-input-number [nzSize]="'small'" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 col-lg-2">
+                        <div class="ten-lb-box" [style.backgroundColor]="sixcolor">
+                            <h3>55 <span>Lb.</span></h3>
+                            <p>Tank Exch $344.00</p>
+                        </div>
+                        <nz-input-number [nzSize]="'small'" [nzMin]="1" [nzMax]="10" [nzStep]="1"></nz-input-number>
+                    </div>
+                </div>
+                <div class="row mt-2">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label class="mb-0" for="">Order Notes</label>
+                        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person">
+                            <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+                            <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+                            <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+                        </nz-select>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label class="mb-0" for="">Payment Type</label>
+                        <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person">
+                            <nz-option nzLabel="Jack" nzValue="jack"></nz-option>
+                            <nz-option nzLabel="Lucy" nzValue="lucy"></nz-option>
+                            <nz-option nzLabel="Tom" nzValue="tom"></nz-option>
+                        </nz-select>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                        <label class="d-block mb-0" for="">Billing Address</label>
+                        <label style="font-size:14px;" nz-checkbox>Is Your Billing Address Same As Delivery
+                            address?</label>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 address-detail">
+                        <label class="mb-0" for="">Street Address</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 address-detail">
+                        <label class="mb-0" for="">Town/City</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 address-detail">
+                        <label class="mb-0" for="">State</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-3 address-detail">
+                        <label class="mb-0" for="">Zip</label>
+                        <input nz-input placeholder="Basic usage" />
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                        <button type="submit" class="btn btn-primary px-4 rounded-pill">PREVIEW INVOICE</button>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 d-flex align-items-end justify-content-end ">
+                        <p class="subtotal">SUBTOTAL($): $0.00</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
